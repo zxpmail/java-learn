@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <!--
+        name:指定kbase的名称，可以任意，但是需要唯一
+        packages:指定规则文件的目录，需要根据实际情况填写，否则无法加载到规则文件
+        default:指定当前kbase是否为默认
+    -->
+    <kbase name="myKbase1" packages="rules" default="true">
+        <!--
+            name:指定ksession名称，可以任意，但是需要唯一
+            default:指定当前session是否为默认
+        -->
+        <ksession name="ksession-rule" default="true"/>
+    </kbase>
+
+    <kbase name="BookKB" packages="rules.discount">
+        <ksession name="BookKB"/>
+    </kbase>
+
+    <kbase name="ComparisonKB" packages="rules.comparison">
+        <ksession name="ComparisonKB"/>
+    </kbase>
+
+    <kbase name="AttributeKB" packages="rules.attribute">
+        <ksession name="AttributeKB"/>
+    </kbase>
+
+    <kbase name="StudentKB" packages="rules.student">
+        <ksession name="StudentKB"/>
+    </kbase>
+
+    <kbase name="ActivationGroupKB" packages="rules.attribute.activationgroup">
+        <ksession name="ActivationGroupKB"/>
+    </kbase>
+
+    <kbase name="AgendaGroupKB" packages="rules.attribute.agendagroup">
+        <ksession name="AgendaGroupKB"/>
+    </kbase>
+
+    <kbase name="TimerKB" packages="rules.attribute.time">
+        <ksession name="TimerKB"/>
+    </kbase>
+
+    <kbase name="DateKB" packages="rules.attribute.date">
+        <ksession name="DateKB"/>
+    </kbase>
+
+    <kbase name="GlobalKB" packages="rules.attribute.senior.globals">
+        <ksession name="GlobalKB"/>
+    </kbase>
+
+    <kbase name="QueryKB" packages="rules.attribute.senior.querys">
+        <ksession name="QueryKB"/>
+    </kbase>
+
+    <kbase name="FunctionKB" packages="rules.attribute.senior">
+        <ksession name="FunctionKB"/>
+    </kbase>
+
+    <kbase name="LHSKB" packages="rules.attribute.senior">
+        <ksession name="LHSKB"/>
+    </kbase>
+
+</kmodule>

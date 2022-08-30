@@ -1,0 +1,13 @@
+//当前规则文件用于测试query查询
+package rules.attribute.senior.querys
+import cn.piesat.drools.model.Student
+
+//定义一个Query查询,可以到工作内存中查询符合条件的Fact对象
+query "query_1"
+    $student:Student(age == 50)
+end
+
+//定义一个Query查询,可以到工作内存中查询符合条件的Fact对象，带有查询参数
+query "query_2"(String sname)
+    $student:Student(age > 5 && name == sname)
+end
