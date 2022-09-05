@@ -16,6 +16,7 @@ end
 
 //当前规则用于测试insert内置方法
 rule "要求Student的age等于10岁"
+    salience 15
     when
         $student:Student(age == 10)
     then

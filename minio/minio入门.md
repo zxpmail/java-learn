@@ -100,3 +100,5 @@ minio.exe server --address :9999 d:\minio\data
 [MinIO学习 - 有梦想的鱼i - 博客园 (cnblogs.com)](https://www.cnblogs.com/yuxl01/archive/2022/05/16/16226701.html)
 
 [高性能分布式对象存储——MinIO（环境部署） - 大数据老司机 - 博客园 (cnblogs.com)](https://www.cnblogs.com/liugp/p/16558869.html)
+
+https://mp.weixin.qq.com/s/e1x_cA8JdFklHxqqVfe0eQ

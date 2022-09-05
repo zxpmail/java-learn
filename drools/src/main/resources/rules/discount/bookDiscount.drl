@@ -25,7 +25,7 @@ end
 //规则三：所购图书总价在200到300元的优惠50元
 rule "book_discount_3"
     when
-        $order:Order($op:originalPrice <= 300 && originalPrice >= 200) and
+        $order:Order($op:originalPrice <= 300 && originalPrice >= 200)
         $customer:Customer(age>20 && gender=="male")
     then
         System.out.println("$op=" + $op);
